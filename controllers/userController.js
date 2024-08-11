@@ -41,12 +41,13 @@ module.exports = {
     async deleteUser(req, res) {
         const userId = req.params.userId;
         await User.findOneAndDelete({ _id: userId });
+        res.send ("user has been removed")
 
     },
     //add friend
     async addFriend(req, res) {
         const userId = req.params.userId;
-        const friendId = req.body.friendId;
+        const friendId = req.params.friendId;
         const user = await User.findOneAndUpdate(
             { _id: userId },
             { $addToSet: { friends: friendId } },
@@ -67,5 +68,6 @@ module.exports = {
             { $pull: { friends: friendId } },
             { new: true }
         )
+        res.json(user);
     }
 }
