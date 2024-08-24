@@ -105,3 +105,6 @@ createdAt: Date, default value is the current timestamp
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+Deployed/Demo Video Links
+* [Demo Video](https://drive.google.com/file/d/1gMGkH70X2ZtVnX42GzOIvak4rG-XT3LF/view?usp=drive_link)
+* [GitHub Repo](https://github.com/Faiza-Haque/FriendCircle)
